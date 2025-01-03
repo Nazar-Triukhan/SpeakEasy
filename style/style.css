@@ -1,0 +1,332 @@
+:root {
+  --mini-text-color: #757575;
+  --max-text-color: #212121;
+  --primary-color: #ffffff;
+  --team-background-color: #f5f4fa;
+  --header-footer-background-color: #2f303a;
+  --button-backgrouhd-color: #2196f3;
+  --logo-color: #000000;
+  --mini-text-footer-color: rgba(255, 255, 255, 0.6);
+  --button-hero-color: rgba(0, 0, 0, 0.15);
+}
+
+.conteiner {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  font-family: Roboto;
+}
+
+/* навігація сайту */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+}
+
+.Web {
+  color: var(--button-backgrouhd-color);
+}
+
+.Studio {
+  color: var(--logo-color);
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+  margin-left: 300px;
+}
+
+.header-items {
+  display: flex;
+  gap: 60px;
+  margin-left: auto;
+}
+
+.header-contact {
+  color: var(--max-text-color);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+}
+
+
+.header-contact:hover {
+  color: var(--button-backgrouhd-color);
+}
+
+
+/* Шапка сайту */
+
+.hero {
+  background-color: var(--header-footer-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  color: var(--primary-color);
+  font-size: 40px;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  width: 830px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+}
+
+.hero-text{
+  display: flex;
+  justify-content: center;
+}
+
+.hero-btn {
+  border-radius: 4px;
+  background: var(--button-backgrouhd-color);
+  box-shadow: 0px 4px 4px 0px var(--button-hero-color);
+  padding: 10px 32px;
+  border: none;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  margin-top: 30px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* про нашу сторінку */
+
+.aboutpage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.aboutpage-list{
+  display: flex;
+  gap: 30px;
+}
+
+.aboutpage-item::before{
+  content: '';
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: var(--team-background-color);
+  margin-bottom: 30px;
+  display: block;
+}
+
+.aboutpage-item:nth-child(1)::before{
+  content: '';
+  background-image: url('../image/antenna.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutpage-item:nth-child(2)::before{
+  content: '';
+  background-image: url('../image/clock.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutpage-item:nth-child(3)::before{
+  content: '';
+  background-image: url('../image/diagram.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutpage-item:nth-child(4)::before{
+  content: '';
+  background-image: url('../image/astronaut.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutpage-title {
+  color: var(--max-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.aboutpage-text {
+  color: var(--mini-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  margin-top: 10px;
+}
+
+/* Чим ми займаємось */
+
+.ourwork {
+  padding-bottom: 94px;
+}
+
+.ourwork-title {
+  color: var(--max-text-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  display: flex;
+  justify-content: center;
+}
+
+.ourwork-list{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ourwork-img{
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
+}
+
+/* Наша команда */
+
+.aboutus {
+  background-color: var(--team-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.aboutus-title {
+  color: var(--max-text-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.aboutus-list{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
+.aboutus-item{
+  background: var(--primary-color);
+}
+
+.aboutus-background{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.aboutus-image {
+  width: 270px;
+  height: 260px;
+  flex-shrink: 0;
+}
+
+.aboutus-heading {
+  color: var(--max-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.48px;
+}
+
+.aboutus-text {
+  color: var(--mini-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.48px;
+  margin-top: 10px;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--header-footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
+
+.footer-Web {
+  color: var(--button-backgrouhd-color);
+}
+
+.footer-Studio {
+  color: var(--primary-color);
+}
+
+.footer-address{
+  margin-top: 20px;
+}
+
+.footer-list{
+  font-style: normal;
+  gap: 9px;
+}
+
+.footer-maps {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.footer-link {
+  color: var(--mini-text-footer-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.footer-item:nth-last-child(-n+2){
+  margin-top: 9px;
+}
